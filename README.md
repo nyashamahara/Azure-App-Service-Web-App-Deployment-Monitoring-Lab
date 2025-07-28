@@ -52,9 +52,7 @@ This hands-on lab demonstrates the complete lifecycle of deploying, staging, swa
 </p>
 
 
-![Azure App Service Flow Diagram](./screenshots/azure-app-service-flow.png)
 
----
 
-## 📁 Folder Structure
+
 
