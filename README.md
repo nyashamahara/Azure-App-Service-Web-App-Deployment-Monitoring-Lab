@@ -37,26 +37,20 @@ This hands-on lab demonstrates the complete lifecycle of deploying, staging, swa
 ---
 
 ## 🧱 Architecture Diagram
-```mermaid
-graph TD
-    U[User] --> P[Production Slot]
-    P --> A[App Service Plan S1]
-    A --> W[Web App]
+<h3 align="center">Azure App Service Deployment Architecture</h3>
 
-    P -. Swap Preview .-> S[Staging Slot]
-    S --> D[Zip Deploy via Kudu]
-    S --> T[App Setting: test-setting=blue]
+<p align="center">
+  <img src="https://github.com/nyashamahara/Azure-App-Service-Web-App-Deployment-Monitoring-Lab/blob/main/screenshots/architecture%20diagram.png?raw=true" 
+       alt="Azure Architecture Diagram" 
+       width="600"/>
+</p>
 
-    subgraph Monitoring
-        M1[Metrics]
-        M2[Logs]
-        M3[Resource Health]
-    end
+<p align="center">
+  <em>Figure: Visual overview of the deployment and monitoring architecture.</em><br>
+  📸 <a href="https://github.com/nyashamahara/Azure-App-Service-Web-App-Deployment-Monitoring-Lab/tree/main/screenshots" target="_blank">
+  View all 18 step-by-step screenshots in the <code>/screenshots</code> folder</a>
+</p>
 
-    W --> M1
-    W --> M2
-    W --> M3
-```
 
 ![Azure App Service Flow Diagram](./screenshots/azure-app-service-flow.png)
 
